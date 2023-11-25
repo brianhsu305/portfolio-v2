@@ -1,0 +1,54 @@
+.hero {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.info {
+    /* text-align: left; */
+}
+.name {
+    margin: 0;
+    font-size: 3rem;
+}
+.title {
+    margin: 0;
+}
+.intro {
+    margin: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: block;
+	cursor: pointer;
+	margin: 0.5rem;
+}
+li:hover {
+	/* text-align: right; */
+	animation: slide-right 0.5s ease forwards;
+	background-color: #37ff9f;
+	color: #000000;
+	font-weight: 700;
+}
+.socials {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+a:hover {
+    color: #37ff9f;
+    transition: color .2s ease-in;
+}
+
+@keyframes slide-right {
+	0% {
+		padding-left: 0%;
+	}
+	100% {
+		padding-left: 50%;
+	}
+}
