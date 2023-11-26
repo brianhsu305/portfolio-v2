@@ -1,12 +1,10 @@
 .hero {
-    margin-top: 30%;
+	position: fixed;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
-.info {
-    /* text-align: left; */
-}
+
 .name {
     margin: 0;
     font-size: 3rem;
@@ -22,24 +20,22 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-li {
+.nav-item {
+    margin-top: 0.5rem;
 	display: block;
-	cursor: pointer;
-	margin: 0.5rem;
 }
-li:hover {
-	/* text-align: right; */
-	animation: slide-right 0.5s ease forwards;
+.nav-item:hover {
 	background-color: #37ff9f;
 	color: #000000;
 	font-weight: 700;
+	animation: slide-right 0.5s ease forwards;
 }
 .socials {
 	display: flex;
-	justify-content: center;
 	gap: 1rem;
 }
-a:hover {
+
+.socials > a:hover {
     color: #37ff9f;
     transition: color .2s ease-in;
 }
@@ -49,6 +45,6 @@ a:hover {
 		padding-left: 0%;
 	}
 	100% {
-		padding-left: 50%;
+		padding-left: 70%;
 	}
 }

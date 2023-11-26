@@ -1,0 +1,9 @@
+.resume {
+    text-decoration: underline;
+}
+.resume:hover {
+    color: #37ff9f;
+    transition: color .2s ease-in;
+}
+
+

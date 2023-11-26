@@ -12,9 +12,10 @@ function Hero() {
 			</div>
 			<nav>
 				<ul>
-					<li className='nav-item'>About</li>
-					<li className='nav-item'>Projects</li>
-					<li className='nav-item'>Skills</li>
+					<li><a className='nav-item' href="#about">About</a></li>
+					<li><a className='nav-item' href="#projects">Projects</a></li>
+					<li><a className='nav-item' href="#skills">Skills</a></li>
+
 				</ul>
 			</nav>
 			<div className='socials'>
