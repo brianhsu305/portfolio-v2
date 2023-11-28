@@ -5,12 +5,27 @@
 }
 .project-card {
     display: flex;
+    align-items: center;
     gap: 3rem;
     padding: 1rem;
+    height: 10rem;
+    border-radius: .5rem;
 }
+h2{
+    margin: 0;
+}
+.right-icon {
+    opacity: 0;
+}
+
 .project-card:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 1rem;
+    background-color: pink;
+    transition: background-color 0.2s ease-in;
+    animation: slidein 0.2s ease-in forwards;
+}
+
+.project-card:hover .right-icon {
+    animation: slidein 0.2s ease-in forwards;
 }
 
 img {
@@ -22,6 +37,26 @@ img {
     text-decoration: underline;
 }
 .projects-link:hover {
-    color: #37ff9f;
-    transition: color .2s ease-in;
+    /* color: #37ff9f; */
+    color: pink;
+}
+
+@keyframes enlarge {
+    0% {
+        width: 4rem;
+    }
+    100% {
+        width: 10rem;
+    }
+}
+
+@keyframes slidein {
+	0% {
+		margin-left: -10%;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 0%;
+		opacity: 100;
+	}
 }

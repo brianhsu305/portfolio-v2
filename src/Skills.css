@@ -1,0 +1,39 @@
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.skill-name {
+	margin: 0;
+	font-size: 1.5rem;
+}
+.icon {
+	font-size: 2rem;
+}
+.skill-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+    cursor: pointer;
+}
+.right-arrow {
+	font-size: 1.5rem;
+	opacity: 0;
+}
+.skill-card:hover {
+	background-color: pink;
+	transition: background-color 0.2s ease-in;
+}
+
+@keyframes slidein {
+	0% {
+		margin-left: -10%;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 0%;
+		opacity: 100;
+	}
+}

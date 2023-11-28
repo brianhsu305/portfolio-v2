@@ -2,15 +2,14 @@ import Hero from './Hero'
 import Content from './Content'
 import './App.css';
 
-function App() {
 
+function App() {
 	return (
 		<>
-			<main>
+			<div className='container main'>
 				<Hero />
-        <div></div>
 				<Content/>
-			</main>
+			</div>
 		</>
 	);
 }
