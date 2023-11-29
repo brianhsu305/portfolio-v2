@@ -1,6 +1,6 @@
-import recipescreenshot from './assets/Recipe-dictionary.png';
-import libraryscreenshot from './assets/Brians-library.png';
-import snakescreenshot from './assets/Snake-game.png';
+import recipescreenshot from './assets/recipe.png';
+import libraryscreenshot from './assets/library.png';
+import snakescreenshot from './assets/snake.png';
 
 import ProjectCard from './ProjectCard';
 
