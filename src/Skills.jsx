@@ -1,13 +1,12 @@
 import * as SiIcons from 'react-icons/si';
 import * as FaIcons from 'react-icons/fa6';
 import SkillCard from './SkillCard.jsx';
-import './Skills.css';
 
 function Skills() {
 	return (
-		<section className='skills' id='skills'>
-			<div className='languages'>
-				<h2>Languages</h2>
+		<section className='grid grid-cols-2 gap-5' id='skills'>
+			<div className=''>
+				<h2 className='text-2xl font-bold pb-5'>Languages</h2>
 				<SkillCard skill='JavaSript' link='https://www.javascript.com/' icon={<SiIcons.SiJavascript />} />
 				<SkillCard skill='Python' link='https://www.python.org/' icon={<SiIcons.SiPython />} />
 				<SkillCard skill='C' link='https://www.cprogramming.com/' icon={<SiIcons.SiC />} />
@@ -20,8 +19,8 @@ function Skills() {
 				<SkillCard skill='SASS' link='https://sass-lang.com/' icon={<SiIcons.SiSass />} />
 				<SkillCard skill='Json' link='https://www.json.org/json-en.html' icon={<SiIcons.SiJson />} />
 			</div>
-			<div className='technologies'>
-				<h2>Technologies</h2>
+			<div>
+				<h2 className='text-2xl font-bold pb-5'>Technologies</h2>
 				<SkillCard skill='Node.js' link='https://nodejs.org/en/' icon={<SiIcons.SiNodedotjs />} />
 				<SkillCard skill='React' link='https://react.dev/' icon={<SiIcons.SiReact />} />
 				<SkillCard skill='Bootstrap' link='https://getbootstrap.com/' icon={<SiIcons.SiBootstrap />} />

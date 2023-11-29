@@ -1,44 +1,31 @@
 import recipescreenshot from './assets/recipe-dictionary.png';
 import libraryscreenshot from './assets/Brians-library.png';
 import snakescreenshot from './assets/snake-game.png';
-import { FaArrowRight } from 'react-icons/fa';
 
-import './Projects.css';
+import ProjectCard from './ProjectCard';
 
 function Projects() {
 	return (
-		<section className='projects' id='projects'>
-			<a href='https://recipe-dictionary.netlify.app/' className='project-card'>
-				<img src={recipescreenshot} alt='recipe dictionary project screenshot' className='project-img' />
-				<div className='project-words'>
-					<h2 className='project-name'>Recipe Dictionary</h2>
-					<p className='project-description'>A recipe look up project using React, and EDAMAM API.</p>
-				</div>
-				<div className='right-icon'>
-					<FaArrowRight />
-				</div>
-			</a>
-			<a href='https://brians-library.netlify.app/' className='project-card'>
-				<img src={libraryscreenshot} alt='' className='project-img' />
-				<div className='project-words'>
-					<h2 className='project-name'>Brian's Library</h2>
-					<p className='project-description'>A library that can add, delete, mark and view all books added by user..</p>
-				</div>
-				<div className='right-icon'>
-					<FaArrowRight />
-				</div>
-			</a>
-			<a href='/' className='project-card'>
-				<img src={snakescreenshot} alt='' className='project-img' />
-				<div className='project-words'>
-					<h2 className='project-name'>Snake Game</h2>
-					<p className='project-description'>A recreation of the classic snake game using JavaScript, HTML and CSS.</p>
-				</div>
-				<div className='right-icon'>
-					<FaArrowRight />
-				</div>
-			</a>
-			<a href='https://github.com/brianhsu305?tab=repositories' className='projects-link'>
+		<section className='flex flex-col gap-10' id='projects'>
+			<ProjectCard 
+				title='Recipe Dictionary' 
+				description='A recipe look up project using React, and EDAMAM API.' 
+				link='https://recipe-dictionary.netlify.app/' 
+				screenshot={recipescreenshot} 
+			/>
+			<ProjectCard
+				title="Brian's Library"
+				description='A library that can add, delete, mark and view all books added by user.'
+				link='https://brians-library.netlify.app/'
+				screenshot={libraryscreenshot}
+			/>
+			<ProjectCard
+				title='Snake Game'
+				description='A recreation of the classic snake game using JavaScript, HTML and CSS.'
+				link='/'
+				screenshot={snakescreenshot}
+			/>
+			<a href='https://github.com/brianhsu305?tab=repositories' className='underline font-bold hover:text-pink-300'>
 				View other projects on GitHub
 			</a>
 		</section>

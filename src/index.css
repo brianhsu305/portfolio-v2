@@ -1,39 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	color-scheme: light dark;
+	background-color: #242424;
+	-webkit-font-smoothing: antialiased;
 }
 
-a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: none;
+/*
+
+@keyframes slide-right {
+	0% {
+		background-color: #242424;
+		color: #ffffff;
+		font-weight: 400;
+		padding-left: 0%;
+	}
+	100% {
+		background-color: pink;
+		color: #000000;
+		font-weight: 700;
+		padding-left: 70%;
+	}
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+@keyframes enlarge {
+	0% {
+		width: 4rem;
+	}
+	100% {
+		width: 10rem;
+	}
 }
 
-.accent {
-  color: pink;
-}
+@keyframes slidein {
+	0% {
+		margin-left: -10%;
+		opacity: 0;
+	}
+	100% {
+		margin-left: 0%;
+		opacity: 100;
+	}
+} */
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+} 
