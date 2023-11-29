@@ -5,9 +5,9 @@ import Skills from './Skills';
 
 function App() {
 	return (
-		<div className='container mx-auto grid grid-cols-2 gap-10 p-32'>
+		<div className='container mx-auto grid grid-cols-5 gap-10 p-32'>
 			<Hero />
-			<div className='flex flex-col gap-10'>
+			<div className='flex flex-col gap-10 col-span-3 col-start-3'>
 				<About />
 				<Projects />
 				<Skills />

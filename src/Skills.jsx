@@ -17,6 +17,7 @@ function Skills() {
 				<SkillCard skill='HTML' link='https://developer.mozilla.org/en-US/docs/Web/HTML' icon={<SiIcons.SiHtml5 />} />
 				<SkillCard skill='CSS' link='https://developer.mozilla.org/en-US/docs/Web/CSS' icon={<SiIcons.SiCss3 />} />
 				<SkillCard skill='SASS' link='https://sass-lang.com/' icon={<SiIcons.SiSass />} />
+				<SkillCard skill='Tailwind' link='https://tailwindcss.com/' icon={<SiIcons.SiTailwindcss />} />
 				<SkillCard skill='Json' link='https://www.json.org/json-en.html' icon={<SiIcons.SiJson />} />
 			</div>
 			<div>

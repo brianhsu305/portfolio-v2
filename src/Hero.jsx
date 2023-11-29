@@ -4,30 +4,24 @@ import { FaEnvelope } from 'react-icons/fa6';
 
 function Hero() {
 	return (
-		<div className='flex flex-col gap-10 sticky top-32 self-start'>
+		<div className='flex flex-col gap-10 sticky top-32 self-start col-span-2'>
 			<div>
 				<h1 className='text-5xl font-bold text-pink-300'>Brian Hsu</h1>
 				<h2 className='text-2xl font-medium'>Software Developer</h2>
 				<p className='text-xl text-gray-400'>I build websites, apps, and games.</p>
 			</div>
 			<nav>
-				<ul>
-					<li>
-						<a className='text-xl hover:font-bold hover:text-black hover:bg-pink-300' href='#about'>
-							About
-						</a>
-					</li>
-					<li>
-						<a className='text-xl hover:font-bold hover:text-black hover:bg-pink-300' href='#projects'>
-							Projects
-						</a>
-					</li>
-					<li>
-						<a className='text-xl hover:font-bold hover:text-black hover:bg-pink-300' href='#skills'>
-							Skills
-						</a>
-					</li>
-				</ul>
+				<a className='text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-40' href='#about'>
+					About
+				</a>
+
+				<a className='text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-40' href='#projects'>
+					Projects
+				</a>
+
+				<a className='text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-40' href='#skills'>
+					Skills
+				</a>
 			</nav>
 			<div className='flex flex-row gap-3 text-xl'>
 				<a href='https://github.com/brianhsu305' className='hover:text-pink-300'>
