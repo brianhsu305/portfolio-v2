@@ -1,4 +1,6 @@
 import pdf from './assets/resume.pdf';
+import { FaArrowRight } from 'react-icons/fa';
+
 function About() {
 	return (
 		<section className='leading-relaxed' id='about'>
@@ -13,8 +15,9 @@ function About() {
 				Currently, I looking to get my first software developer job so I can get in touch with other coding people and see their ways of using different methods or technologies to solve
 				problems.
 			</p>
-			<a href={pdf} className='underline font-bold hover:text-pink-300'>
-				View resume
+			<a href={pdf} className='group flex flex-row gap-2 items-center'>
+				<span className=' underline font-bold group-hover:text-pink-300'>View resume</span>
+				<span className='invisible group-hover:visible group-hover:text-pink-300'><FaArrowRight /></span>
 			</a>
 		</section>
 	);

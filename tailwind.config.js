@@ -5,7 +5,11 @@ export default {
 		extend: {
 			fontFamily: {
 				
-			}
+			},
+			transitionProperty: {
+				'height': 'height',
+				'spacing': 'margin, padding',
+			  }
 		},
 	},
 	plugins: ["prettier-plugin-tailwindcss"],
