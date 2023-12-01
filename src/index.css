@@ -2,19 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	color-scheme: light dark;
-	background-color: #242424;
-	-webkit-font-smoothing: antialiased;
-	position: relative;
-	overflow: hidden;
-}
-.shiny-pointer {
+
+html {
 	background-color: #242424;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 }
-.shiny-pointer::after {
+
+html::after {
 	content: '';
 	position: absolute;
 	top: calc(var(--y, 0) * 1px - 35vw);
@@ -23,25 +18,5 @@
 	height: 70vw;
 	opacity: 0.6;
 	background: radial-gradient(#8d8d8d50, #3984ff00 40%);
-}
-:root::after {
-	content: '';
-	position: absolute;
-	top: calc(var(--y, 0) * 1px - 35vw);
-	left: calc(var(--x, 0) * 1px - 35vw);
-	width: 70vw;
-	height: 70vw;
-	opacity: 0.6;
-	background: radial-gradient(#8d8d8d50, #3984ff00 40%);;
-	
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
+	z-index: -1;
 }

@@ -17,7 +17,7 @@ function About() {
 			</p>
 			<a href={pdf} className='group flex flex-row gap-2 items-center'>
 				<span className=' underline font-bold group-hover:text-pink-300'>View resume</span>
-				<span className='invisible group-hover:visible group-hover:text-pink-300'><FaArrowRight /></span>
+				<span className='transition-spacing invisible group-hover:visible group-hover:text-pink-300 group-hover:pl-3'><FaArrowRight /></span>
 			</a>
 		</section>
 	);
