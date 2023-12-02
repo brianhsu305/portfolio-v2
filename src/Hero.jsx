@@ -13,7 +13,7 @@ function Hero() {
 				</div>
 				<nav>
 					<a className='transition-spacing text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#about'>
-						About
+						<span>About</span>
 					</a>
 
 					<a className='transition-spacing text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#projects'>

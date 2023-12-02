@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* 
 html {
 	background-color: #242424;
 	position: relative;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 html::after {
@@ -18,5 +19,28 @@ html::after {
 	height: 70vw;
 	opacity: 0.6;
 	background: radial-gradient(#8d8d8d50, #3984ff00 40%);
+	z-index: -1;
+} */
+html {
+	scroll-behavior: smooth;
+
+}
+body {
+	background-color: #242424;
+	cursor: none;
+}
+a {
+	cursor: none;
+}
+
+.cursor {
+	width: 3rem;
+	height: 3rem;
+	background-color: white;
+	/* background: radial-gradient(circle at center, white, transparent); */
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
 	z-index: -1;
 }

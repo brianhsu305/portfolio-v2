@@ -3,25 +3,31 @@ import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
 
+import React, { useEffect, useState } from 'react';
+
 function App() {
-	const root = document.querySelector(':root');
-	let mouseX, mouseY;
-	root.addEventListener('mousemove', (e) => {
-		const { x, y } = root.getBoundingClientRect();
-		mouseX = e.clientX - parseInt(x);
-		mouseY = e.clientY - parseInt(y);
-		root.style.setProperty('--x', e.clientX - parseInt(x));
-		root.style.setProperty('--y', e.clientY - parseInt(y));
-	});
+	const [mousePos, setMousePos] = useState({});
+	useEffect(() => {
+		const handleMouseMove = (e) => {
+			setMousePos({ x: e.pageX, y: e.pageY });
+		};
+		window.addEventListener('mousemove', handleMouseMove);
+
+		return () => {
+			window.removeEventListener('mouseMove', handleMouseMove);
+		};
+	}, []);
 
 	return (
-		<div
-			className=' antialiased text-white container mx-auto grid grid-cols-2 gap-10 scroll-smooth px-32'>
-			<Hero />
-			<div className='flex flex-col gap-10 py-32'>
-				<About />
-				<Projects />
-				<Skills />
+		<div className='container mx-auto px-32 antialiased text-white'>
+			<div className='cursor' style={{ top: `${mousePos.y}px`, left: `${mousePos.x}px` }}></div>
+			<div className='grid grid-cols-2 gap-10 '>
+				<Hero />
+				<div className='flex flex-col gap-40 py-32'>
+					<About />
+					<Projects />
+					<Skills />
+				</div>
 			</div>
 		</div>
 	);
