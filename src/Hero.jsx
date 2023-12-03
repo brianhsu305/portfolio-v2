@@ -4,7 +4,7 @@ import { FaEnvelope } from 'react-icons/fa6';
 
 function Hero() {
 	return (
-		<div className='h-screen flex flex-col place-content-between sticky self-start justify-between top-0 py-32'>
+		<div className='lg:h-screen lg:flex lg:flex-col lg:place-content-between lg:sticky lg:self-start lg:justify-between lg:top-0 lg:py-32'>
 			<div className='flex flex-col gap-10'>
 				<div>
 					<h1 className='text-7xl font-bold text-pink-300'>Brian Hsu</h1>

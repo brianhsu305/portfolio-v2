@@ -12,18 +12,17 @@ function App() {
 			setMousePos({ x: e.pageX, y: e.pageY });
 		};
 		window.addEventListener('mousemove', handleMouseMove);
-
 		return () => {
 			window.removeEventListener('mouseMove', handleMouseMove);
 		};
 	}, []);
 
 	return (
-		<div className='container mx-auto px-32 antialiased text-white'>
+		<div className='antialiased text-white lg:container lg:mx-auto lg:px-32 '>
 			<div className='cursor' style={{ top: `${mousePos.y}px`, left: `${mousePos.x}px` }}></div>
-			<div className='grid grid-cols-2 gap-10 '>
+			<div className='lg:grid lg:grid-cols-2 lg:gap-5 flex flex-col'>
 				<Hero />
-				<div className='flex flex-col gap-40 py-32'>
+				<div className='flex flex-col lg:gap-40 lg:py-32'>
 					<About />
 					<Projects />
 					<Skills />
