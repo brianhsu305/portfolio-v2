@@ -12,15 +12,15 @@ function Hero() {
 					<p className='text-xl text-gray-400'>I build websites, apps, and games.</p>
 				</div>
 				<nav>
-					<a className='transition-spacing text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#about'>
+					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#about'>
 						<span>About</span>
 					</a>
 
-					<a className='transition-spacing text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#projects'>
+					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#projects'>
 						Projects
 					</a>
 
-					<a className='transition-spacing text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#skills'>
+					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#skills'>
 						Skills
 					</a>
 				</nav>
