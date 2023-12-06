@@ -1,12 +1,15 @@
 import { FaArrowRight } from 'react-icons/fa';
 
-function ProjectCard(prop) {
+function ProjectCard({title, description, link, screenshot, isHovered, handleHover}) {
 	return (
-		<a href={prop.link} className='transition-colors group flex flex-row gap-10 items-center p-3 rounded-md hover:bg-pink-300'>
-			<img src={prop.screenshot} alt={`${prop.title} project screenshot`} className=' spect-video w-40 rounded-md' />
+		<a href={link} className={`project-card cgroup flex flex-row gap-10 items-center p-3 rounded-md ${isHovered ? 'hovered':''}`} 
+		onMouseEnter={() => handleHover(true)} 
+		onMouseLeave={() => handleHover(false)}
+		>
+			<img src={screenshot} alt={`${title} screenshot`} className='aspect-video w-40 rounded-md' />
 			<div className=''>
-				<h2 className='transition-colors font-bold text-xl group-hover:font-extrabold group-hover:text-slate-800'>{prop.title}</h2>
-				<p className='transition-colors group-hover:text-slate-800'>{prop.description}</p>
+				<h2 className='font-bold text-xl'>{title}</h2>
+				<p className=''>{description}</p>
 			</div>
 			<div className='hidden'>
 				<FaArrowRight />

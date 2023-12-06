@@ -14,8 +14,8 @@ function About() {
 			<p>
 				Currently, I am looking to start my professional software developer career to apply my skills in real world and to make an impact. Feel free to contact me if you like my portfolio! 
 			</p>
-			<a href={pdf} className='group flex flex-row gap-2 items-center'>
-				<span className=' underline font-bold group-hover:text-pink-300 pt-4'>View resume</span>
+			<a href={pdf} className='group flex flex-row gap-2 items-center pt-4'>
+				<span className=' underline font-bold group-hover:text-pink-300 '>View resume</span>
 				<span className='transition-spacing invisible group-hover:visible group-hover:text-pink-300 group-hover:pl-3'><FaArrowRight /></span>
 			</a>
 		</section>

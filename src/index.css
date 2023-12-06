@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-html {
-	background-color: #242424;
-	position: relative;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-}
-
-html::after {
-	content: '';
-	position: absolute;
-	top: calc(var(--y, 0) * 1px - 35vw);
-	left: calc(var(--x, 0) * 1px - 35vw);
-	width: 70vw;
-	height: 70vw;
-	opacity: 0.6;
-	background: radial-gradient(#8d8d8d50, #3984ff00 40%);
-	z-index: -1;
-} */
 html {
 	scroll-behavior: smooth;
 
@@ -28,6 +9,12 @@ html {
 body {
 	background-color: #242424;
 	/* cursor: none; */
+}
+
+
+.project-card:not(.hovered) {
+	opacity: 0.6;
+	transition: 0.3s ease-in-out;
 }
 
 

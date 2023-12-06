@@ -15,7 +15,6 @@ function Hero() {
 					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#about'>
 						<span>About</span>
 					</a>
-
 					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 hover:pl-80' href='#projects'>
 						Projects
 					</a>
