@@ -4,7 +4,7 @@ import { FaEnvelope } from 'react-icons/fa6';
 
 function Hero() {
 	return (
-		<div className='lg:h-screen flex flex-col place-content-between lg:sticky lg:self-start justify-between lg:top-0 py-20 lg:py-32'>
+		<div className='lg:h-screen flex flex-col place-content-between lg:sticky lg:self-start justify-between lg:top-0 py-5 lg:py-32'>
 			<div>
 				<div>
 					<h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-primary">Brian Hsu</h1>
@@ -13,7 +13,7 @@ function Hero() {
 				</div>
 				<nav className="nav hidden lg:block">
 					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 lg:hover:pl-80' href='#about'>
-						<span>About</span>
+						About
 					</a>
 					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-pink-300 lg:hover:pl-80' href='#projects'>
 						Projects
