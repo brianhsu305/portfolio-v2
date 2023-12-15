@@ -4,19 +4,16 @@
 
 html {
 	scroll-behavior: smooth;
-
 }
 body {
 	background-color: #242424;
 	/* cursor: none; */
 }
 
-
 .project-card:not(.hovered) {
 	opacity: 0.6;
 	transition: 0.3s ease-in-out;
 }
-
 
 /* .cursor {
 	width: 3rem;
