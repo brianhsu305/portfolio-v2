@@ -23,7 +23,6 @@ const Projects = () => {
 		}
 	};
 
-
 	return (
 		<section className='flex flex-col gap-10' id='projects'>
 			<div className='project-container'>
