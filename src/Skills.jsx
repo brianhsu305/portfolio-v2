@@ -4,9 +4,13 @@ import SkillCard from './SkillCard.jsx';
 
 function Skills() {
 	return (
-		<section className='grid grid-cols-2 gap-5' id='skills'>
-			<div className=''>
-				<h2 className='text-2xl font-bold pb-5'>Languages</h2>
+		<section className='' id='skills'>
+			<h1 className='sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 text-secondary font-bold'>
+				Skills
+			</h1>
+			<div className="grid grid-cols-2 text-secondary">
+			<div>
+				<h2 className='sm:text-xl md:text-2xl font-bold pb-5'>Languages</h2>
 				<SkillCard skill='JavaSript' link='https://www.javascript.com/' icon={<SiIcons.SiJavascript />} />
 				<SkillCard skill='Python' link='https://www.python.org/' icon={<SiIcons.SiPython />} />
 				<SkillCard skill='C' link='https://www.cprogramming.com/' icon={<SiIcons.SiC />} />
@@ -21,7 +25,7 @@ function Skills() {
 				<SkillCard skill='Json' link='https://www.json.org/json-en.html' icon={<SiIcons.SiJson />} />
 			</div>
 			<div>
-				<h2 className='text-2xl font-bold pb-5'>Technologies</h2>
+				<h2 className='sm:text-xl md:text-2xl font-bold pb-5'>Technologies</h2>
 				<SkillCard skill='Node.js' link='https://nodejs.org/en/' icon={<SiIcons.SiNodedotjs />} />
 				<SkillCard skill='React' link='https://react.dev/' icon={<SiIcons.SiReact />} />
 				<SkillCard skill='Bootstrap' link='https://getbootstrap.com/' icon={<SiIcons.SiBootstrap />} />
@@ -34,6 +38,7 @@ function Skills() {
 				<SkillCard skill='git' link='https://git-scm.com/' icon={<SiIcons.SiGit />} />
 				<SkillCard skill='GitHub' link='https://github.com/' icon={<SiIcons.SiGithub />} />
 				<SkillCard skill='GitLab' link='https://about.gitlab.com/' icon={<FaIcons.FaGitlab />} />
+			</div>
 			</div>
 		</section>
 	);

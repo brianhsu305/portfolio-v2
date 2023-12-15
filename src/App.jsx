@@ -18,11 +18,11 @@ function App() {
 	}, []);
 
 	return (
-		<div className='antialiased text-white lg:container lg:mx-auto lg:px-32 '>
+		<div className='mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0'>
 			<div className='cursor' style={{ top: `${mousePos.y}px`, left: `${mousePos.x}px` }}></div>
-			<div className='lg:grid lg:grid-cols-2 lg:gap-5 flex flex-col'>
+			<div className='flex flex-col md:flex-row'>
 				<Hero />
-				<div className='flex flex-col lg:gap-40 lg:py-32'>
+				<div className='lg:gap-40 lg:py-32'>
 					<About />
 					<Projects />
 					<Skills />
