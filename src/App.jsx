@@ -18,7 +18,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className='mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0'>
+		<div className='mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans bg-background md:px-12 md:py-20 lg:px-24 lg:py-0'>
 			<div className='cursor' style={{ top: `${mousePos.y}px`, left: `${mousePos.x}px` }}></div>
 			<div className='flex flex-col md:flex-row'>
 				<Hero />

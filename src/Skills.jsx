@@ -10,7 +10,7 @@ function Skills() {
 			</h1>
 			<div className="grid grid-cols-2 text-secondary">
 			<div>
-				<h2 className='sm:text-xl md:text-2xl font-bold pb-5'>Languages</h2>
+				<h2 className='text-lg md:text-2xl font-bold pb-5 text-secondary'>Languages</h2>
 				<SkillCard skill='JavaSript' link='https://www.javascript.com/' icon={<SiIcons.SiJavascript />} />
 				<SkillCard skill='Python' link='https://www.python.org/' icon={<SiIcons.SiPython />} />
 				<SkillCard skill='C' link='https://www.cprogramming.com/' icon={<SiIcons.SiC />} />
@@ -25,7 +25,7 @@ function Skills() {
 				<SkillCard skill='Json' link='https://www.json.org/json-en.html' icon={<SiIcons.SiJson />} />
 			</div>
 			<div>
-				<h2 className='sm:text-xl md:text-2xl font-bold pb-5'>Technologies</h2>
+				<h2 className='text-lg md:text-2xl font-bold pb-5 text-secondary'>Technologies</h2>
 				<SkillCard skill='Node.js' link='https://nodejs.org/en/' icon={<SiIcons.SiNodedotjs />} />
 				<SkillCard skill='React' link='https://react.dev/' icon={<SiIcons.SiReact />} />
 				<SkillCard skill='Bootstrap' link='https://getbootstrap.com/' icon={<SiIcons.SiBootstrap />} />

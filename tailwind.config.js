@@ -9,10 +9,10 @@ export default {
 		},
 		extend: {
 			colors: {
-				primary: '#F9A8D4',
+				primary: '#ffb3c1',
 				secondary: '#FFFFFF',
 				description: '#9CA3AF',
-				background: '#242424'
+				background: '#212529'
 			},
 			fontFamily: {},
 			transitionProperty: {

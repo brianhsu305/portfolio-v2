@@ -31,7 +31,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-			<a href='https://github.com/brianhsu305?tab=repositories' className='group flex flex-row gap-2 items-center text-description'>
+			<a href='https://github.com/brianhsu305?tab=repositories' className='group flex flex-row gap-2 items-center text-secondary'>
 				<span className=' underline font-bold group-hover:text-primary'>View other projects on GitHub</span>
 				<span className='transition-spacing invisible group-hover:visible group-hover:text-primary group-hover:pl-3'>
 					<FaArrowRight />
