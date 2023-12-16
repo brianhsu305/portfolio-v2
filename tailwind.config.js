@@ -4,15 +4,18 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		screens: {
-			sm: '360px',
-			md: '640px',
+			'sm': '360px',
+			'md': '640px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1540px',
 		},
 		extend: {
 			colors: {
 				primary: '#ffb3c1',
-				secondary: '#FFFFFF',
+				secondary: '#e9ecef',
 				description: '#9CA3AF',
-				background: '#212529'
+				background: '#212529',
 			},
 			fontFamily: {},
 			transitionProperty: {

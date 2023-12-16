@@ -9,17 +9,17 @@ function Hero() {
 				<div>
 					<h1 className=" font-bold tracking-tight text-5xl text-primary">Brian Hsu</h1>
 					<h2 className="mt-3 font-medium tracking-tight text-secondary text-2xl">Software Developer</h2>
-					<p className="mt-4 max-w-xs leading-normal text-gray-400">I build websites, apps, and games.</p>
+					<p className="mt-4 max-w-xs leading-normal text-description">I build websites, apps, and games.</p>
 				</div>
-				<nav className="nav hidden lg:block">
-					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-primary lg:hover:pl-80' href='#about'>
+				<nav className="nav hidden text-secondary mt-10 lg:block">
+					<a className='transition-spacing rounded text-xl block py-2 hover:font-bold hover:text-black hover:bg-primary hover:pl-80' href='#about'>
 						About
 					</a>
-					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-primary lg:hover:pl-80' href='#projects'>
+					<a className='transition-spacing rounded text-xl block py-2 hover:font-bold hover:text-black hover:bg-primary hover:pl-80' href='#projects'>
 						Projects
 					</a>
 
-					<a className='transition-spacing rounded text-xl block hover:font-bold hover:text-black hover:bg-primary lg:hover:pl-80' href='#skills'>
+					<a className='transition-spacing rounded text-xl block py-2 hover:font-bold hover:text-black hover:bg-primary hover:pl-80' href='#skills'>
 						Skills
 					</a>
 				</nav>
