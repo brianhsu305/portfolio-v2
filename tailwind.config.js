@@ -11,6 +11,10 @@ export default {
 			'2xl': '1540px',
 		},
 		extend: {
+			screens:{
+				'qhd':'2560px',
+				'uhd': '3840px'
+			},
 			colors: {
 				primary: '#ffb3c1',
 				secondary: '#e9ecef',
